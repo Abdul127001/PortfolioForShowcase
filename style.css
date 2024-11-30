@@ -1,7 +1,89 @@
+:root {
+    --primary-color:#6741d9;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
     outline: 0px;
     border: 0px;
-    background: #f1f1f1;
+    /* background: #f1f1f1; */
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    width: 1300px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.navbar {
+    position: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 15px 0;
+    background: var(--primary-color);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navbar .menu li {
+margin-left: 10px;
+list-style: none;
+display: inline-block;
+}
+
+.navbar .menu li a{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.home {
+    display: flex;
+    background: url(images/banner.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+
+.home .home-content .text-1 {
+    font-size: 1.9rem;
+}
+
+.home .home-content .text-2 {
+    font-size: 4.5rem;
+    margin-left: 2px;
+    font-weight: 600;
+}
+
+.home .home-content .text-3 {
+    font-size: 2.5rem;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: var(--primary-color);
+    font-weight: 600;
 }
