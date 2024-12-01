@@ -12,7 +12,7 @@
 }
 
 .max-width {
-    width: 1360px;
+    width: 1330px;
     margin: auto;
     padding: 0 80px;
 }
@@ -139,7 +139,7 @@ section {
     padding: 3rem 0;
 }
 
-.about .title {
+section .title {
     text-align: center;
     padding: 1rem 0;
     font-size: 2rem;
@@ -147,7 +147,7 @@ section {
     margin-bottom: 2rem;
 }
 
-.about .title:before {
+section .title:before {
     content: "";
     position: absolute;
     color: var(--primary-color);
@@ -159,8 +159,8 @@ section {
     background-color: #000000;
 }
 
-.about .title:after {
-    content: "who am I";
+section .title:after {
+   
     position: absolute;
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -171,6 +171,10 @@ section {
     background-color: #ffffff;
 }
 
+.about .title:after {
+    content: "who I am";
+}
+
 .about .column img {
     width: 400px;
     height: 400px;
@@ -178,7 +182,7 @@ section {
     object-fit: cover;
 }
 
-.about .about-content {
+.about .about-content, .services .services-content, .skills .skills-content {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -223,6 +227,66 @@ section {
     background-color: transparent;
     color: var(--primary-color);
 }
+
+
+.services {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.services .title:before {
+    background-color: #ffffff;
+}
+
+.services .title:after {
+    background-color: #000;
+    content: "what i provide";
+}
+
+.services .services-content .card {
+    width: calc(33% - 20px);
+    background-color: #222222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1.5rem 1.7rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.services .services-content .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0  5px 2px var(--primary-color)
+}
+
+.services .services-content .card i {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.services .services-content .card .text {
+    font-size: 1.6rem;
+    margin: 7px 0;
+    font-weight: 500;
+}
+
+.services .services-content .card p {
+    font-size: 1rem;
+
+}
+
+
+.skills .title:after {
+    content: "what I know";
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left {
+    font-size: 1rem;
+}
+
 
 
 
