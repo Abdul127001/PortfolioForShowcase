@@ -24,7 +24,7 @@
     padding: 20px 0;
     transition: all 0.5s ease;
     /* background: var(--primary-color); */
-    z-index: 1;
+    z-index: 9999;
 }
 
 .navbar.sticky {
@@ -182,7 +182,7 @@ section .title:after {
     object-fit: cover;
 }
 
-.about .about-content, .services .services-content, .skills .skills-content {
+.about .about-content, .services .services-content, .skills .skills-content, .contact .contact-content {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
@@ -440,9 +440,115 @@ section .title:after {
 }
 
 
+.contact .column .text {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.contact .column p {
+    font-size: 1rem;
+    margin: 15px 0;
+    text-align: justify;
+}
+.contact .left {
+    width: calc(33% - 30px);
+}
+
+.contact .column .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .column .row  .info {
+    margin-left: 25px;
+}
+
+.contact .column .row i {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+}
+
+.contact .column .info .head {
+    font-weight: 600;
+}
+
+.contact .column .info .sub-title {
+    color: #333;
+}
+
+
+.contact .contact-content .right {
+    width: calc(66% - 30px);
+}
+
+.contact .contact-content .right .text {
+    margin-bottom: 40px;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .fields .field, .contact .right form .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.contact .right form .fields .name {
+margin-right: 5px;
+}
+
+.contact .right form .fields .email {
+    margin-left: 5px;
+}
 
 
 
+.contact .right form .field input, .contact .right form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid lightgrey;
+}
+
+.contact .right form .textarea textarea {
+    height: 80px !important;
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form  .button button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 40px;
+    background-color: var(--primary-color);
+    outline: none;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.contact .right form  .button button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #000000;
+    padding: 15px 0;
+    color: #ffffff;
+}
 
 
 @media (max-width: 1330px) {
