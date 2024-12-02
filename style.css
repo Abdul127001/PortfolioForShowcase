@@ -12,7 +12,7 @@
 }
 
 .max-width {
-    width: 1330px;
+    width: 100%;
     margin: auto;
     padding: 0 80px;
 }
@@ -229,12 +229,12 @@ section .title:after {
 }
 
 
-.services {
+.services, .teams {
     background-color: #000000;
     color: #ffffff;
 }
 
-.services .title:before {
+.services .title:before, .teams .title:before {
     background-color: #ffffff;
 }
 
@@ -364,7 +364,80 @@ section .title:after {
     width: 70%;
 }
 
+.teams .title:after {
+    content: "who with me";
+    background-color: #000;
+}
 
+.teams .carousel .card {
+    background-color: #222222;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.teams .carousel .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0  5px 1px #ffffff;
+    background-color: var(--primary-color);
+}
+
+.teams .carousel .card .text {
+    font-size: 1.2rem;
+    margin: 10px 0 7px 0;
+    font-weight: 500;
+}
+
+.teams .carousel .card .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teams .carousel .card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+}
+
+.teams .carousel .card:hover img {
+    border-color: #ffffff;
+}
+
+.owl-dots {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.owl-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0 4px;
+    border: 2px solid var(--primary-color) !important;
+    outline: none !important;
+    transition: all 0.5s ease;
+}
+
+.owl-dot.active {
+    /* border: 2px solid #ffffff !important; */
+    width: 25px;
+    border-radius: 6px;
+}
+
+.owl-dot.active, .owl-dot:hover {
+    background-color: var(--primary-color) !important;
+}
+
+.contact .title:after {
+    content: "get in touch";
+}
 
 
 
