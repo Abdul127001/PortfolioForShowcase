@@ -14,11 +14,6 @@ $(document).ready(function(){
         } else {
             $('.scroll-up-btn').removeClass("show");
         }
-
-      
-
-
-
     })
 
     $('.scroll-up-btn').click(function(){
@@ -28,6 +23,13 @@ $(document).ready(function(){
     $('.navbar .menu-btn').click(function(){
         $('.navbar .menu').toggleClass('active');
         $('.menu-btn i').toggleClass('active');
+    })
+
+    var typed = new Typed(".typing", {
+        strings: ["Website Designer","Web App Developer", "Front End Developer", "Freelancer"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop:true
     })
 
 

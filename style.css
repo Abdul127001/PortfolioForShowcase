@@ -32,10 +32,6 @@ html {
     pointer-events:visible;
 }
 
-.scroll-up-btn:hover {
-    /* transform: translateY(-10px); */
-}
-
 * {
     margin: 0px;
     padding: 0px;
