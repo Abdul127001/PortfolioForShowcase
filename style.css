@@ -3,7 +3,8 @@
 }
 
 html {
-    scroll-behaviour: smooth;
+  scroll-behavior: smooth;
+}
 
 * {
     margin: 0px;
