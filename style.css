@@ -2,9 +2,6 @@
     --primary-color:#6741d9;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 * {
     margin: 0px;
