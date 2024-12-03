@@ -2,6 +2,9 @@
     --primary-color:#6741d9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0px;
@@ -136,7 +139,7 @@ display: inline-block;
 }
 
 section {
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 section .title {
