@@ -209,6 +209,7 @@ section .title:after {
     height: 400px;
     border-radius: 10px;
     object-fit: cover;
+    /* box-shadow: 0 0 10px 1px rgba(0,0,0,0.5); */
 }
 
 .about .about-content, .services .services-content, .skills .skills-content, .contact .contact-content {
