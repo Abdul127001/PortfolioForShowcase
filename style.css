@@ -90,6 +90,7 @@ display: inline-block;
 }
 
 .navbar .menu li a{
+    display: block;
     color: #ffffff;
     font-weight: 500;
     font-size: 1rem;
@@ -717,7 +718,6 @@ footer {
         /* SKILLS */
 
         .skills .skills-content {
-            
             flex-direction: column-reverse;
         }
 
@@ -778,14 +778,20 @@ footer {
         
         .contact .column .icons {
            display: flex;
-           justify-content: center;
-           align-items: center;
+           /* justify-content: center; */
+           /* align-items: center; */
            flex-wrap: wrap;
         }
 
-        .contact .column .icons .row:nth-child(2) {
+        .contact .column .icons .row {
             margin-left: 2rem;
         }
+
+
+
+        /* .contact .column .icons .row:nth-child(2) {
+            margin-left: 2rem;
+        } */
 
 
         footer {
