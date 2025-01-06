@@ -61,6 +61,11 @@ html {
     background: var(--primary-color);
 }
 
+/* .navbar .logo1 {
+    width: 120px;
+    height: 80px;
+} */
+
 .navbar.sticky .logo a span {
     color: #ffffff;
 }
