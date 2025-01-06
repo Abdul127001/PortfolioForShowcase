@@ -496,8 +496,14 @@ section .title:after {
     align-items: center;
 }
 
+
+
 .contact .column .row  .info {
     margin-left: 25px;
+}
+
+.icons .sm-social-icons {
+    display: none;
 }
 
 .contact .column .row i {
@@ -594,6 +600,341 @@ footer {
 
 
 
+
+
+
+
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+
+}
+
+
+/* Large devices such as laptops (1100px and up) */
+@media only screen and (max-width: 1100px) {
+
+
+    .max-width {
+        padding: 0 2rem;
+    }
+
+    
+    
+        /* Home */
+
+       
+
+        .home .home-content .text-1 {
+            font-size: 2.5rem;
+        }
+
+        .home .home-content .text-2 {
+            font-size: 3rem;
+            margin-left: 0;
+        }
+        
+        .home .home-content .text-3 {
+            font-size: 2rem;
+        }
+
+
+        .home .home-content .home-btn, .about .right  a, .skills .skills-content .left  a {
+            color: #ffffff;
+            background-color: var(--primary-color);
+            padding: 0.8rem 1.3rem;
+            border-radius: 5px;
+            font-weight: 400;
+            border: 2px solid var(--primary-color);
+            transition: color 0.5s ease;
+        }
+
+        /* About */
+
+
+
+        .about .left {
+            width: 38%;
+        }
+        
+        
+        .about .right {
+            width: 55%;
+        }
+
+
+
+        .about .column img {
+            width: 100%;
+            height: 350px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            object-fit: cover;
+            /* box-shadow: 0 0 10px 1px rgba(0,0,0,0.5); */
+        }
+
+
+        /* Services */
+
+
+        .services .services-content .card {
+            width: calc(33% - 20px);
+            background-color: #222222;
+            text-align: center;
+            border-radius: 10px;
+            padding: 1.5rem 1.7rem;
+            cursor: pointer;
+            transition: all 0.5s ease;
+        }
+                
+
+
+        /* SKILLS */
+
+
+        /* TEAM */
+
+
+        /* CONTACT */
+
+
+        .contact .left {
+            width: calc(40% - 30px);
+        }
+
+        .contact .contact-content .right {
+            width: calc(60% - 30px);
+        }
+        
+    
+
+}
+
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (max-width: 768px) {
+ 
+
+    .max-width {
+        padding: 0 3rem;
+    }
+
+    
+    .navbar .menu-btn {
+        display: block;
+        z-index: 9999;
+    }
+
+    .navbar .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu  {
+        padding-top: 3rem;
+        background-color: #000000;
+        top: 0;
+        left: -100%;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.5s ease;
+        }
+
+        .navbar .menu.active {
+            left: 0;
+        }
+
+        .navbar .menu li {
+            display: block;
+        }
+
+        .navbar .menu li a {
+            display: inline-block;
+            font-size: 1.5rem;
+            padding: 20px 0;
+        }
+
+        /* Home */
+
+        .home .max-width {
+            margin: auto 0 auto 0px;
+        }
+        
+
+        .home .home-content .text-1 {
+            font-size: 2rem;
+        }
+
+        .home .home-content .text-2 {
+            font-size: 2.4rem;
+            transition: 0.5s;
+            margin-left: 0;
+        }
+        
+        .home .home-content .text-3 {
+            font-size: 2rem;
+            transition: 0.5s;
+        }
+
+
+        .home .home-content .home-btn, .about .right  a, .skills .skills-content .left  a {
+            color: #ffffff;
+            background-color: var(--primary-color);
+            padding: 0.7rem 1.3rem;
+            border-radius: 5px;
+            font-weight: 400;
+            border: 2px solid var(--primary-color);
+            transition: color 0.5s ease;
+        }
+
+        /* About */
+
+        .about .left {
+            width: 100%;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        
+        
+        .about .right {
+            width: 80%;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+
+        .about .column img {
+            width: 80%;
+            height: 400px;
+            border-radius: 10px;
+            box-sizing: border-box;
+            object-fit: cover;
+            /* box-shadow: 0 0 10px 1px rgba(0,0,0,0.5); */
+        }
+
+
+        /* Services */
+
+                
+        .services .services-content .card {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+        }
+
+        .services .services-content .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .services .services-content .card i {
+            font-size: 2rem;
+        }
+
+        .services .services-content .card .text {
+            font-size: 1.5rem;
+        }
+
+        .services .services-content .card p {
+            font-size: 1rem;
+
+        }
+
+
+        /* SKILLS */
+
+        .skills .skills-content {
+            flex-direction: column-reverse;
+        }
+
+                
+        .skills .skills-content .column {
+            width: 80%;
+        }
+
+        .skills .skills-content .left .text {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .skills .skills-content .left  p {
+            font-size: 1rem;
+        }
+
+        .skills .skills-content .left  {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+
+        /* TEAM */
+
+
+        /* CONTACT */
+
+        .contact .contact-content {
+            flex-direction: column-reverse;
+        }
+
+        .contact .left {
+            width: 80%;
+        }
+
+        .contact .left .text {
+            margin-top:2rem;
+            text-align: center;
+        }
+        
+        .contact .left p {
+            margin-top: 5px;
+        }
+        
+
+        .contact .contact-content .right {
+            width: 80%;
+        }
+        
+
+        .contact .contact-content .right .text {
+            margin: 20px;
+            text-align: center;
+        }
+
+
+        
+        .contact .column .icons {
+           display: flex;
+           /* justify-content: center; */
+           /* align-items: center; */
+           flex-wrap: wrap;
+        }
+
+        .contact .column .icons .row {
+            margin-left: 2rem;
+        }
+
+
+
+        /* .contact .column .icons .row:nth-child(2) {
+            margin-left: 2rem;
+        } */
+
+
+        footer {
+            padding: 15px 2rem;
+        }
+
+        footer .active_footer {
+            display: none;
+        }
+
+}
+
+
+
+
+
+
 /* Small devices such as large phones (640px and up) */
 @media only screen and (max-width: 640px) {
 
@@ -644,17 +985,17 @@ footer {
         }
 
         .home .home-content .text-1 {
-            font-size: 1.8rem;
+            font-size: 2rem;
         }
 
         .home .home-content .text-2 {
-            font-size: 2.3rem;
+            font-size: 2.5rem;
             transition: 0.5s;
             margin-left: 0;
         }
         
         .home .home-content .text-3 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             transition: 0.5s;
         }
 
@@ -672,14 +1013,14 @@ footer {
         /* About */
 
         .about .left {
-            width: 100%;
+            width: 85%;
             text-align: center;
-            margin: 1.5rem 0;
+            margin: 1.5rem auto;
         }
         
         
         .about .right {
-            width: 100%;
+            width: 85%;
             text-align: center;
         }
 
@@ -698,7 +1039,7 @@ footer {
 
                 
         .services .services-content .card {
-            width: 100%;
+            width: 85%;
             margin-bottom: 1rem;
         }
 
@@ -728,7 +1069,7 @@ footer {
 
                 
         .skills .skills-content .column {
-            width: 100%;
+            width: 85%;
         }
 
         .skills .skills-content .left .text {
@@ -756,7 +1097,7 @@ footer {
         }
 
         .contact .left {
-            width: 100%;
+            width: 85%;
         }
 
         .contact .left .text {
@@ -770,7 +1111,7 @@ footer {
         
 
         .contact .contact-content .right {
-            width: 100%;
+            width: 85%;
         }
         
 
@@ -779,18 +1120,53 @@ footer {
             text-align: center;
         }
 
+        .contact .column .row {
+            display: none;
+        }
 
+        .icons  {
+            justify-content:center;
+            align-items:center;
+        }
+
+       .icons .sm-social-icons {
+            display: flex;
+        }
+
+        .icons .social-row {
+            margin: 1rem;
+        }
+
+        .icons .sm-social-icons i {
+            font-size: 2.3rem;
+            /* margin-left: 2rem */
+        }
+
+                
+        .social-row .fa-facebook {
+            color: #3B5998;
+            /* color: white; */
+        }
         
-        .contact .column .icons {
-           display: flex;
-           /* justify-content: center; */
-           /* align-items: center; */
-           flex-wrap: wrap;
+        .social-row .fa-square-x-twitter {
+            color: #000000;
+            /* color: white; */
         }
+        .social-row .fa-linkedin {
+            color: #007bb5;
+            /* color: white; */
+        }
+        .social-row .fa-instagram {
+            color: #125688;
+            /* color: white; */
+        }
+        .social-row .fa-github {
+            color: #24292e;
+            /* color: white; */
+        }  
+        
 
-        .contact .column .icons .row {
-            margin-left: 2rem;
-        }
+    
 
 
 
@@ -814,28 +1190,6 @@ footer {
 
 
 
-@media only screen and (min-width: 640px) {
-  
-}
-
-/* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 768px) {
- 
-    
-}
-
-
-/* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 1024px) {
-
-    
-
-}
-
-/* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 1280px) {
-
-}
 
 
 
