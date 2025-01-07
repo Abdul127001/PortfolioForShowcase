@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
 
 :root {
     --primary-color:#6741d9;
@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: "Yrsa", serif;
 }
 
 .scroll-up-btn {
@@ -137,7 +138,7 @@ display: inline-block;
 
 
 .home .home-content .text-1 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .home .home-content .text-2 {
@@ -147,7 +148,7 @@ display: inline-block;
 }
 
 .home .home-content .text-3 {
-    font-size: 1.9rem;
+    font-size: 3rem;
     margin: 5px 0;
     margin-bottom: 30px;
 }
@@ -228,12 +229,13 @@ section .title:after {
 }
 
 .about .about-content .text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
 .about .right p {
+    font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 2rem;
 }
@@ -243,12 +245,12 @@ section .title:after {
 }
 
 .about .left {
-    width: 45%;
+    width: 40%;
 }
 
 
 .about .right {
-    width: 55%;
+    width: 60%;
 }
 
 .about .right  a {
@@ -328,7 +330,7 @@ section .title:after {
 }
 
 .skills .skills-content .left  p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     text-align: justify;
     margin-bottom: 30px;
 }
@@ -359,14 +361,13 @@ section .title:after {
 
 .skills .skills-content .right .info span {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 8px;
 }
 
 .skills .skills-content .right .line {
     height: 7px;
     width: 100%;
-
     background-color: #cec7c7;
     position: relative;
     border-radius: 10px;
@@ -477,16 +478,19 @@ section .title:after {
     content: "get in touch";
 }
 
-
 .contact .column .text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
+.contact .left .text {
+    margin-top: 50px;
+}
+
 .contact .column p {
-    font-size: 1rem;
-    margin: 15px 0;
+    font-size: 1.2rem;
     text-align: justify;
+    margin: 5px 0;
 }
 .contact .left {
     width: calc(33% - 30px);
@@ -515,6 +519,7 @@ section .title:after {
 
 .contact .column .info .head {
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .contact .column .info .sub-title {
@@ -524,20 +529,23 @@ section .title:after {
 
 .contact .contact-content .right {
     width: calc(66% - 30px);
+
 }
 
 .contact .contact-content .right .text {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .contact .right form .fields {
     display: flex;
+    
 }
 
 .contact .right form .fields .field, .contact .right form .field {
     height: 45px;
     width: 100%;
     margin-bottom: 5px;
+  
 }
 
 .contact .right form .fields .name {
@@ -595,22 +603,6 @@ footer {
     color: #ffffff;
 }
 
-
-
-
-/*   RESPONSIVE  */
-
-
-
-
-
-
-
-
-/* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 1280px) {
-
-}
 
 
 /* Large devices such as laptops (1100px and up) */
@@ -982,18 +974,28 @@ footer {
 
         /* Home */
 
-        .home .home-content {
-            text-align: center;
+        
+        .home {
+            background: url(images/banner1.jpg) no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+            background-position:left;
         }
+
+        /* .home .home-content {
+            text-align: center;
+        } */
 
         .home .home-content .text-1 {
             font-size: 2rem;
+            margin-bottom: 5px;
         }
 
         .home .home-content .text-2 {
             font-size: 2.5rem;
             transition: 0.5s;
             margin-left: 0;
+            margin-bottom: 5px;     
         }
         
         .home .home-content .text-3 {
@@ -1005,7 +1007,7 @@ footer {
         .home .home-content .home-btn, .about .right  a, .skills .skills-content .left  a {
             color: #ffffff;
             background-color: var(--primary-color);
-            padding: 0.9rem 1.5rem;
+            padding: 0.8rem 1.4rem;
             border-radius: 5px;
             font-weight: 400;
             border: 2px solid var(--primary-color);
