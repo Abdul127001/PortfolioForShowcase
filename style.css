@@ -221,10 +221,15 @@ section .title:after {
     /* box-shadow: 0 0 10px 1px rgba(0,0,0,0.5); */
 }
 
-.about .about-content, .services .services-content, .skills .skills-content, .contact .contact-content {
+.about .about-content, .services .services-content, .projects .projects-content, .skills .skills-content, .contact .contact-content {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.projects .projects-content {
+    justify-content:flex-start;
     align-items: center;
 }
 
@@ -269,12 +274,12 @@ section .title:after {
 }
 
 
-.services, .teams {
+.services, .teams, .projects {
     background-color: #000000;
     color: #ffffff;
 }
 
-.services .title:before, .teams .title:before {
+.services .title:before, .teams .title:before, .projects .title:before {
     background-color: #ffffff;
 }
 
@@ -283,7 +288,12 @@ section .title:after {
     content: "what i provide";
 }
 
-.services .services-content .card {
+.projects .title:after {
+    background-color: #000;
+    content: "what i build";
+}
+
+.services .services-content .card, .projects .projects-content .card {
     width: calc(33% - 20px);
     background-color: #222222;
     text-align: center;
@@ -293,23 +303,27 @@ section .title:after {
     transition: all 0.5s ease;
 }
 
-.services .services-content .card:hover {
+.projects .projects-content .card {
+    margin: 10px;
+}
+
+.services .services-content .card:hover, .projects .projects-content .card:hover {
     transform: translateY(-10px);
     box-shadow: 0  5px 2px var(--primary-color)
 }
 
-.services .services-content .card i {
+.services .services-content .card i, .projects .projects-content .card i {
     font-size: 2.3rem;
     color: var(--primary-color);
 }
 
-.services .services-content .card .text {
+.services .services-content .card .text, .projects .projects-content .card .text {
     font-size: 1.6rem;
     margin: 7px 0;
     font-weight: 500;
 }
 
-.services .services-content .card p {
+.services .services-content .card p, .projects .projects-content .card p {
     font-size: 1rem;
 
 }
@@ -409,6 +423,7 @@ section .title:after {
 }
 
 .teams .carousel .card {
+    margin-top: 1rem;
     background-color: #222222;
     padding: 2rem 1.5rem;
     border-radius: 10px;
@@ -668,10 +683,10 @@ footer {
         }
 
 
-        /* Services */
+        /* Services & projects */
 
 
-        .services .services-content .card {
+        .services .services-content .card, .projects .projects-content .card {
             width: calc(33% - 20px);
             background-color: #222222;
             text-align: center;
@@ -811,25 +826,25 @@ footer {
         /* Services */
 
                 
-        .services .services-content .card {
+        .services .services-content .card, .projects .projects-content .card {
             width: 80%;
             margin: 0 auto;
             margin-bottom: 1rem;
         }
 
-        .services .services-content .card:hover {
+        .services .services-content .card:hover, .projects .projects-content .card:hover {
             transform: translateY(-5px);
         }
 
-        .services .services-content .card i {
+        .services .services-content .card i, .projects .projects-content .card i {
             font-size: 2rem;
         }
 
-        .services .services-content .card .text {
+        .services .services-content .card .text, .projects .projects-content .card .text {
             font-size: 1.5rem;
         }
 
-        .services .services-content .card p {
+        .services .services-content .card p, .projects .projects-content .card p {
             font-size: 1rem;
 
         }
@@ -1042,24 +1057,24 @@ footer {
         /* Services */
 
                 
-        .services .services-content .card {
+        .services .services-content .card, .projects .projects-content .card {
             width: 85%;
             margin-bottom: 1rem;
         }
 
-        .services .services-content .card:hover {
+        .services .services-content .card:hover, .projects .projects-content .card:hover  {
             transform: translateY(-5px);
         }
 
-        .services .services-content .card i {
+        .services .services-content .card i, .projects .projects-content .card i {
             font-size: 2rem;
         }
 
-        .services .services-content .card .text {
+        .services .services-content .card .text, .projects .projects-content .card .text {
             font-size: 1.5rem;
         }
 
-        .services .services-content .card p {
+        .services .services-content .card p, .projects .projects-content .card p {
             font-size: 1rem;
 
         }
