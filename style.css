@@ -274,12 +274,12 @@ section .title:after {
 }
 
 
-.services, .teams, .projects {
+.services, .skills {
     background-color: #000000;
     color: #ffffff;
 }
 
-.services .title:before, .teams .title:before, .projects .title:before {
+.services .title:before, .skills .title:before {
     background-color: #ffffff;
 }
 
@@ -289,7 +289,6 @@ section .title:after {
 }
 
 .projects .title:after {
-    background-color: #000;
     content: "what i build";
 }
 
@@ -301,15 +300,28 @@ section .title:after {
     padding: 1.5rem 1.7rem;
     cursor: pointer;
     transition: all 0.5s ease;
+  
 }
+
+
 
 .projects .projects-content .card {
-    margin: 10px;
+    background-color: #ffffff;
+    margin: 20px 10px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
 }
 
-.services .services-content .card:hover, .projects .projects-content .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0  5px 2px var(--primary-color)
+.projects .projects-content .card:hover {
+    /* transform: translateY(-10px); */
+    transform: scale(1.02);
+    /* box-shadow: 0  5px 2px var(--primary-color); */
+    border-bottom-color: 2px solid var(--primary-color);
+}
+
+.services .services-content .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0  5px 2px var(--primary-color);
+
 }
 
 .services .services-content .card i, .projects .projects-content .card i {
@@ -331,6 +343,11 @@ section .title:after {
 
 .skills .title:after {
     content: "what I know";
+    background-color: #000;
+}
+
+.skills .title:before {
+
 }
 
 .skills .skills-content .column {
@@ -419,15 +436,17 @@ section .title:after {
 
 .teams .title:after {
     content: "who with me";
-    background-color: #000;
+    /* background-color: #000; */
 }
+
 
 .teams .carousel .card {
     margin-top: 1rem;
-    background-color: #222222;
+    background-color: var(--primary-color);
     padding: 2rem 1.5rem;
     border-radius: 10px;
     text-align: center;
+    color: #ffffff;
     transition: all 0.5s ease;
     cursor: pointer;
 }
@@ -435,8 +454,6 @@ section .title:after {
 
 .teams .carousel .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0  5px 1px #ffffff;
-    background-color: var(--primary-color);
 }
 
 .teams .carousel .card .text {
@@ -458,11 +475,9 @@ section .title:after {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid var(--primary-color);
-}
-
-.teams .carousel .card:hover img {
     border-color: #ffffff;
 }
+
 
 .owl-dots {
     margin-top: 20px;
