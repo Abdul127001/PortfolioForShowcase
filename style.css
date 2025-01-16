@@ -22,7 +22,7 @@ html {
     text-align: center;
     color: #ffffff;
     font-size: 1.5rem;
-    line-height: 50px;
+    line-height: 55px;
     transition: all 0.5s ease;
     cursor: pointer;
     pointer-events: none;
@@ -274,12 +274,12 @@ section .title:after {
 }
 
 
-.services, .skills {
+.services, .skills, .contact {
     background-color: #000000;
     color: #ffffff;
 }
 
-.services .title:before, .skills .title:before {
+.services .title:before, .skills .title:before, .contact .title:before {
     background-color: #ffffff;
 }
 
@@ -344,10 +344,6 @@ section .title:after {
 .skills .title:after {
     content: "what I know";
     background-color: #000;
-}
-
-.skills .title:before {
-
 }
 
 .skills .skills-content .column {
@@ -506,6 +502,7 @@ section .title:after {
 
 .contact .title:after {
     content: "get in touch";
+    background-color: #000000;
 }
 
 .contact .column .text {
@@ -553,7 +550,7 @@ section .title:after {
 }
 
 .contact .column .info .sub-title {
-    color: #333;
+    color: #e9e9e9;
 }
 
 
@@ -670,7 +667,6 @@ footer {
             border-radius: 5px;
             font-weight: 400;
             border: 2px solid var(--primary-color);
-            transition: color 0.5s ease;
         }
 
         /* About */
@@ -1041,7 +1037,6 @@ footer {
             border-radius: 5px;
             font-weight: 400;
             border: 2px solid var(--primary-color);
-            transition: color 0.5s ease;
         }
 
         /* About */
