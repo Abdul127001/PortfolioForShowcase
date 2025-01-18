@@ -158,7 +158,7 @@ display: inline-block;
     font-weight: 600;
 }
 
-.home .home-content .home-btn  {
+.home .home-content .home-btn {
     color: #ffffff;
     background-color: var(--primary-color);
     padding: 0.9rem 2rem;
@@ -233,6 +233,8 @@ section .title:after {
     align-items: center;
 }
 
+
+
 .about .about-content .text {
     font-size: 1.8rem;
     font-weight: 600;
@@ -300,28 +302,49 @@ section .title:after {
     padding: 1.5rem 1.7rem;
     cursor: pointer;
     transition: all 0.5s ease;
-  
 }
 
 
 
 .projects .projects-content .card {
+    border: 1px solid rgba(0,0,0,0.5);
+    cursor:default;
     background-color: #ffffff;
     margin: 20px 10px;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
 }
 
+
 .projects .projects-content .card:hover {
-    /* transform: translateY(-10px); */
-    transform: scale(1.02);
-    /* box-shadow: 0  5px 2px var(--primary-color); */
-    border-bottom-color: 2px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+    transform: translateY(-10px);
+    /* box-shadow: 0 0 10px 1px var(--primary-color); */
+    box-shadow: 0 5px 2px var(--primary-color);
+}
+
+.projects .projects-content .card .pro-btn a {
+    color: var(--primary-color);
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.projects .projects-content .card .pro-btn a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.services .services-content .card {
+    margin: 4rem 0;
 }
 
 .services .services-content .card:hover {
     transform: translateY(-10px); 
     box-shadow: 0  5px 2px var(--primary-color);
-
 }
 
 .services .services-content .card i, .projects .projects-content .card i {
@@ -437,25 +460,36 @@ section .title:after {
 
 
 .teams .carousel .card {
-    margin-top: 1rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
     background-color: var(--primary-color);
     padding: 2rem 1.5rem;
     border-radius: 10px;
-    text-align: center;
+    text-align: justify;
     color: #ffffff;
     transition: all 0.5s ease;
     cursor: pointer;
+    font-weight: 500;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0  10px 2px rgba(0,0,0,0.5);
 }
 
 
 .teams .carousel .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0  5px 2px var(--primary-color);
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid var(--primary-color);
 }
 
 .teams .carousel .card .text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 10px 0 7px 0;
-    font-weight: 500;
+}
+
+.teams .carousel .card:hover .text {
+    color: var(--primary-color);
 }
 
 .teams .carousel .card .box {
@@ -470,8 +504,12 @@ section .title:after {
     width: 150px;
     border-radius: 50%;
     object-fit: cover;
+    border: 5px solid #ffffff;;
+    transition: all 0.5s ease;
+}
+
+.teams .carousel .card:hover img {
     border: 5px solid var(--primary-color);
-    border-color: #ffffff;
 }
 
 
@@ -572,7 +610,6 @@ section .title:after {
     height: 45px;
     width: 100%;
     margin-bottom: 5px;
-  
 }
 
 .contact .right form .fields .name {
@@ -586,10 +623,12 @@ margin-right: 5px;
 
 
 .contact .right form .field input, .contact .right form .textarea textarea {
+    color: var(--primary-color);
     width: 100%;
     height: 100%;
     padding: 0 15px;
     border-radius: 10px;
+    font-weight: 500;
     outline: none;
     font-size: 1rem;
     border: 1px solid lightgrey;
