@@ -669,6 +669,7 @@ footer {
     background-color: #000000;
     padding: 15px 0;
     color: #ffffff;
+    text-align: justify;
 }
 
 
@@ -883,6 +884,16 @@ footer {
             margin: 0 auto;
             margin-bottom: 1rem;
         }
+
+        
+        .projects .projects-content .card {
+            border: 1px solid rgba(0,0,0,0.5);
+            cursor:default;
+            background-color: #ffffff;
+            /* margin: 20px 10px; */
+            box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+        }
+
 
         .services .services-content .card:hover, .projects .projects-content .card:hover {
             transform: translateY(-5px);
@@ -1200,11 +1211,13 @@ footer {
         }
 
        .icons .sm-social-icons {
+            margin-bottom: 0;
             display: flex;
+            margin-top: 1rem;
         }
 
         .icons .social-row {
-            margin: 1rem;
+            margin: 1.3rem;
         }
 
         .icons .sm-social-icons i {
@@ -1214,25 +1227,25 @@ footer {
 
                 
         .social-row .fa-facebook {
-            color: #3B5998;
-            /* color: white; */
+            /* color: #3B5998; */
+            color: white;
         }
         
         .social-row .fa-square-x-twitter {
-            color: #000000;
-            /* color: white; */
+            /* color: #000000; */
+            color: white;
         }
         .social-row .fa-linkedin {
-            color: #007bb5;
-            /* color: white; */
+            /* color: #007bb5; */
+            color: white;
         }
         .social-row .fa-instagram {
-            color: #125688;
-            /* color: white; */
+            /* color: #125688; */
+            color: white;
         }
         .social-row .fa-github {
-            color: #24292e;
-            /* color: white; */
+            /* color: #24292e; */
+            color: white;
         }  
         
 
