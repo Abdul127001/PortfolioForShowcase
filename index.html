@@ -395,6 +395,7 @@
         emailjs.send('service_ars1wyj', 'template_5whnggv', params).then(
           (response) => {
             alert('Thanks For Contacting Us!!! Your Message Has Been Sent Successfully. We Will Contact You shortly.');
+            window.location.reload();
           },
           (error) => {
             alert('something went wrong. Please Try Again...', error);
