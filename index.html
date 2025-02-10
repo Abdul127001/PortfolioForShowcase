@@ -364,8 +364,7 @@
                         <div class="button">
                             <button type="submit" onclick="sendMail()">Send Message</button>
                         </div>
-                    
-                    
+                   
                 </div>
                 
             </div>
@@ -388,8 +387,6 @@
             subject: document.getElementById("subject").value,
             message: document.getElementById("message").value,
         }
-        
-        //emailjs.send("service_fvcqv79","template_9mtaups",params).then(alert("Your Email has Been Sent!!"));
         
         
         emailjs.send('service_ars1wyj', 'template_5whnggv', params).then(
