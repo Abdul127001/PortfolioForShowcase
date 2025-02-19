@@ -380,6 +380,7 @@
     <script src="script.js"></script>
     <script>
         function sendMail() {
+          
         
         let params  = {
             name: document.getElementById("name").value,
@@ -387,17 +388,23 @@
             subject: document.getElementById("subject").value,
             message: document.getElementById("message").value,
         }
+
+        if(name != "" && email != "" && message != "") {
+
+            emailjs.send('service_ars1wyj', 'template_5whnggv', params).then(
+              (response) => {
+                alert('Thanks For Contacting Us!!! Your Message Has Been Sent Successfully. We Will Contact You shortly.');
+                window.location.reload();
+              },
+              (error) => {
+                alert('something went wrong. Please Try Again...', error);
+              },
+            );
+        } else {
+            alert("All fields Are mendatory!!!")
+        }
         
         
-        emailjs.send('service_ars1wyj', 'template_5whnggv', params).then(
-          (response) => {
-            alert('Thanks For Contacting Us!!! Your Message Has Been Sent Successfully. We Will Contact You shortly.');
-            window.location.reload();
-          },
-          (error) => {
-            alert('something went wrong. Please Try Again...', error);
-          },
-        );
         }
         
         </script>
